@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
 import './App.css';
 
 function App() {
@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <h1>hello world
       </h1>
+      <Button variant="danger">Danger</Button>
+
     </div>
   );
 }
