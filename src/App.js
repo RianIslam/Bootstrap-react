@@ -1,6 +1,7 @@
-import Button from 'react-bootstrap/Button';
+
 import './App.css';
 import Header from './components/Header/Header';
+import News from './components/News/News';
 import TopHeadLine from './components/TopHeadline/TopHeadLine';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       </h1>
       <Header/>
       <TopHeadLine/>
-      <Button variant="danger">Danger</Button>
+      <News/>
+      
 
     </div>
   );
