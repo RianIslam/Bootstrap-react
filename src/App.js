@@ -1,9 +1,8 @@
 
 import './App.css';
 import Header from './components/Header/Header';
-import News from './components/News/News';
 import TopHeadLine from './components/TopHeadline/TopHeadLine';
-
+import News from './components/News/News'
 function App() {
   return (
     <div className="App">

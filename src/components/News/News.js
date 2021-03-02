@@ -1,25 +1,21 @@
-import { Button } from 'bootstrap'
-import React from 'react'
-import { Card } from 'react-bootstrap'
+import React from "react";
+import { Card,Button } from "react-bootstrap";
 
 const News = () => {
-    return (
-        <div>
-            
-            <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  return (
+    <div>
+<Card>
+  <Card.Header>Featured</Card.Header>
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Special title treatment</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      With supporting text below as a natural lead-in to additional content.
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default News
+export default News;
