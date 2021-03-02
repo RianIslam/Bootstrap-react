@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 const TopHeadLine = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+    const [articles,setArticles] = useState([])
 
-export default TopHeadLine
+  useEffect(() => {
+    const url =
+      "http://newsapi.org/v2/everything?q=tesla&from=2021-02-02&sortBy=publishedAt&apiKey=ed297148d6284d2ebda2180cf2dce808";
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setArticles(data.articles))
+    }, []);
+  return (<div>
+
+    <h1>top header :{articles.length}</h1>
+
+
+  </div>
+  );
+};
+
+export default TopHeadLine;
